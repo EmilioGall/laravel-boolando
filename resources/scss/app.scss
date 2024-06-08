@@ -5,6 +5,10 @@
 /******************************/
 @use "./partials/header" as *;
 
+/*** FOOTER Style *************/
+/******************************/
+@use "./partials/footer" as *;
+
 // Import link for Bootstrap(front-end framework)
 @import "~bootstrap/scss/bootstrap.scss";
 

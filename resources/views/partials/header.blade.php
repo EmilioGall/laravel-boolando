@@ -39,19 +39,19 @@
             <ul class="d-flex align-items-center gap-4">
       
                <li>
-                  <a href="{{ route('woman') }}">
+                  <a href="{{ route('home') }}">
                      <i class="fa-regular fa-user"></i>
                   </a>
                </li>
       
                <li>
-                  <a href="{{ route('man') }}">
+                  <a href="{{ route('home') }}">
                      <i class="fa-regular fa-heart"></i>
                   </a>
                </li>
       
                <li>
-                  <a href="{{ route('kid') }}">
+                  <a href="{{ route('home') }}">
                      <i class="fa-solid fa-bag-shopping"></i>
                   </a>
                </li>
