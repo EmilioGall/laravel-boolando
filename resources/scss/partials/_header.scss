@@ -1,0 +1,22 @@
+// Use variables from partials folder
+@use "./variables" as *;
+
+header {
+   color: $pj-white;
+   background-color: $pj-orange;
+
+   height: $header-height;
+
+   ul {
+
+      li {
+         font-size: 1.5rem;
+      }
+   }
+   a {
+      img {
+         height: calc($header-height/2);
+      }
+   }
+   
+}

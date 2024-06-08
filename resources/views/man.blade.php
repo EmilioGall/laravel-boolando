@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="text-center">
+   <main>
 
-   Men's Products
+      <h1 class="text-center">
 
-</h1>
+         Men's Products
+
+      </h1>
+
+   </main>
 @endsection

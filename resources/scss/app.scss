@@ -1,5 +1,9 @@
 // Use variables from partials folder
-@use "./partials/_variables" as *;
+@use "./partials/variables" as *;
+
+/*** HEADER Style *************/
+/******************************/
+@use "./partials/header" as *;
 
 // Import link for Bootstrap(front-end framework)
 @import "~bootstrap/scss/bootstrap.scss";
@@ -26,6 +30,8 @@ img {
 
 ul {
    list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
 menu {
