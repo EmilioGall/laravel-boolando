@@ -63,7 +63,20 @@ button {
 /***********************************/
 main.home {
 
-   .position-relative {
+   .card-img {
+      position: relative;
+
+      .back-img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         opacity: 0%;
+      }
+
+      &:hover .back-img {
+         opacity: 100%;
+      }
+
       .favorite-badges {
          position: absolute;
          top: 15px;
@@ -77,7 +90,7 @@ main.home {
          position: absolute;
          bottom: 15px;
          left: 0px;
-      }      
+      }
    }
 
    p {
