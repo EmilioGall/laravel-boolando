@@ -1,17 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-   <main>
+   <main class="home">
 
-      <h1 class="text-center">
+      {{-- Products Display Section --}}
+      <section class="container-md">
 
-         Laravel-Vite Template <br>
+         <div class="row g-3 pb-3">
 
-         <em class="fs-4">
-            with Bootstrap <i class="fa-brands fa-bootstrap"></i> and Fontawesome <i class="fa-solid fa-font-awesome"></i>
-         </em>
+            @foreach ($productsKey['products'] as $product)
+               <div class="col-4 border">
 
-      </h1>
+                  <div>
+
+                     <div>
+
+                        <img src="" alt="">
+
+                     </div>
+
+                     <div>
+
+                        <p>Marca</p>
+
+                        <h3>Titolo</h3>
+
+                        <div>
+
+                           <em>prezzo</em>
+                           
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+            @endforeach
+
+         </div>
+
+      </section>
+      {{-- /Products Display Section --}}
 
    </main>
 @endsection

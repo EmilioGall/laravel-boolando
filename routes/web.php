@@ -16,11 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $data = [
-        'test'=> 'test'
+        'productsKey' => config('products'),
     ];
+    // Debug data content
+    // dd($data);
 
     return view('home', $data);
-
 })->name('home');
 
 Route::get('/woman', function () {
