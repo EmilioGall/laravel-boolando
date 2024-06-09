@@ -60,7 +60,37 @@
 
                      <div class="fs-6 fw-bold">
 
-                        <span class="text-danger">{{ $product['price'] }} €</span>
+                        {{-- <span class="text-danger">
+                           {{ $product['price'] - 
+                           if (condition) {
+                              # code...
+                           } else {
+                              # code...
+                           }
+                            }} €
+                        </span> --}}
+
+                        @foreach ($product['badges'] as $badge)
+                           @if ($badge['type'] === 'discount')
+                              <div>
+
+                                 <span class="text-danger me-1">
+                                    {{ number_format($product['price'] - ($product['price'] * (substr($badge['value'], 1, -1))/100),2) }}€
+                                 </span>
+
+                                 <span class="text-decoration-line-through">
+                                    {{ $product['price'] }}€
+                                 </span>
+
+                              </div>
+                           @endif
+                        @endforeach
+
+                        @if ($badge['type'] !== 'discount')
+                           <span class="text-danger">
+                              {{ $product['price'] }}€
+                           </span>
+                        @endif
 
                      </div>
 
