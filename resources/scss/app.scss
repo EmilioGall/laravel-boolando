@@ -63,6 +63,23 @@ button {
 /***********************************/
 main.home {
 
+   .position-relative {
+      .favorite-badges {
+         position: absolute;
+         top: 15px;
+         right: 0px;
+
+         cursor: pointer;
+      }
+
+      .optional-badges {
+         display: flex;
+         position: absolute;
+         bottom: 15px;
+         left: 0px;
+      }      
+   }
+
    p {
       margin: 0;
    }
