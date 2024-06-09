@@ -4,31 +4,31 @@
    <main class="home">
 
       {{-- Products Display Section --}}
-      <section class="container-md">
+      <section class="container-md overflow-hidden">
 
-         <div class="row g-3 pb-3">
+         <div class="row gx-3 gy-4 py-5">
 
             @foreach ($productsKey['products'] as $product)
-               <div class="col-4 border">
+               <div class="col-4">
 
                   <div>
 
                      <div>
 
-                        <img src="" alt="">
+                        <img src="{{ Vite::asset('resources/img/' . $product['frontImage'])}}" alt="Image of {{$product['name']}}">
 
                      </div>
 
                      <div>
 
-                        <p>Marca</p>
+                        <p class="fs-6">{{$product['brand']}}</p>
 
-                        <h3>Titolo</h3>
+                        <h3 class="fs-3">{{strtoupper($product['name'])}}</h3>
 
-                        <div>
+                        <div class="fs-6 fw-bold">
 
-                           <em>prezzo</em>
-                           
+                           <span class="text-danger">{{$product['price']}} €</span>
+
                         </div>
 
                      </div>
